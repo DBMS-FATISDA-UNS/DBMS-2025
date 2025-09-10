@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://github.com",
+  url: "https://dbms-fatisda-uns.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/DBMS-2025/",
@@ -89,12 +89,12 @@ const config: Config = {
           label: "Tutorial",
         },
         {
-          type: "docSidebar",
-          sidebarId: "assignmentsSidebar",
-          docsPluginId: "assignments",
-          label: "Tugas",
-          position: "left",
-        },
+        type: 'docSidebar',
+        sidebarId: 'assignmentsSidebar',
+        docsPluginId: 'assignments',
+        label: 'Tugas',
+        position: 'left',
+      },
         {
           href: "https://github.com/AddinRizal/PEMWEB-2025",
           label: "GitHub",
