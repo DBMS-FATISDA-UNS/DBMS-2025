@@ -9,9 +9,9 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -20,8 +20,17 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            style={{ marginRight: "0.5rem" }}
+            to="/docs"
+          >
+            Tutorial
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            style={{ marginLeft: "0.5rem" }}
+            to="/assignments"
+          >
+            Assignments
           </Link>
         </div>
       </div>
@@ -34,7 +43,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Praktikum Database Management System">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
