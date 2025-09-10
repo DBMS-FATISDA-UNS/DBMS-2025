@@ -132,13 +132,4 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default {
-  url: "https://dbms-fatisda-uns.github.io",
-  baseUrl: "/DBMS-2025/",
-  organizationName: "dbms-fatisda-uns",
-  projectName: "DBMS-2025",
-  deploymentBranch: "gh-pages",
-  trailingSlash: false, // hilangkan warning
-  // ...
-};
-
+export default config;
