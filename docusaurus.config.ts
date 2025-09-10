@@ -96,7 +96,7 @@ const config: Config = {
           position: "left",
         },
         {
-          href: "https://github.com/AddinRizal/PEMWEB-2025",
+          href: "https://github.com/DBMS-FATISDA-UNS/DBMS-2025",
           label: "GitHub",
           position: "right",
         },
