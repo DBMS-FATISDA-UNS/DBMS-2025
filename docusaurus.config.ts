@@ -60,6 +60,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "assignments",
+        path: "assignments", // folder sumber konten
+        routeBasePath: "assignments", // URL -> /assignments/
+        sidebarPath: "./sidebarsAssignments.ts",
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/logo.png",
@@ -77,10 +89,12 @@ const config: Config = {
           label: "Tutorial",
         },
         {
-          to: "/assignments/",
-          label: "Tugas",
-          position: "left",
-        },
+        type: 'docSidebar',
+        sidebarId: 'assignmentsSidebar',
+        docsPluginId: 'assignments',
+        label: 'Tugas',
+        position: 'left',
+      },
         {
           href: "https://github.com/AddinRizal/PEMWEB-2025",
           label: "GitHub",
