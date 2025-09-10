@@ -22,7 +22,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "dbms-fatisda-uns", // Usually your GitHub org/user name.
+  organizationName: "DBMS-FATISDA-UNS", // Usually your GitHub org/user name.
   projectName: "DBMS-2025", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -89,12 +89,12 @@ const config: Config = {
           label: "Tutorial",
         },
         {
-        type: 'docSidebar',
-        sidebarId: 'assignmentsSidebar',
-        docsPluginId: 'assignments',
-        label: 'Tugas',
-        position: 'left',
-      },
+          type: "docSidebar",
+          sidebarId: "assignmentsSidebar",
+          docsPluginId: "assignments",
+          label: "Tugas",
+          position: "left",
+        },
         {
           href: "https://github.com/AddinRizal/PEMWEB-2025",
           label: "GitHub",
