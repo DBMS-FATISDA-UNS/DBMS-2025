@@ -46,6 +46,21 @@ html[data-theme='dark'] .badgeSemester {
 }
 
 
+/* Button with icon alignment */
+.buttonWithIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  line-height: 1;
+}
+
+.buttonIcon {
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+  transform: translateY(0.5px);
+}
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 3rem 1rem 2rem;

@@ -24,6 +24,11 @@
   --ifm-toc-border-color: transparent;
 
   --docusaurus-highlighted-code-line-bg: rgba(30, 64, 175, 0.08);
+  /* Footer tokens to match overall theme */
+  --ifm-footer-background-color: #f8fafc;
+  --ifm-footer-color: #0b1324;
+  --ifm-footer-link-color: var(--ifm-color-primary);
+  --ifm-footer-link-hover-color: var(--ifm-link-hover-color);
 }
 
 [data-theme='dark'] {
@@ -158,3 +163,11 @@ table thead th {
   border: 1px solid var(--ifm-color-emphasis-300);
 }
 
+
+/* Footer dark theme tokens to match overall page */
+[data-theme='dark'] {
+  --ifm-footer-background-color: #0b1324; /* deep slate/navy to match dark surfaces */
+  --ifm-footer-color: #e5e7eb;           /* light text for contrast */
+  --ifm-footer-link-color: var(--ifm-color-primary);
+  --ifm-footer-link-hover-color: var(--ifm-link-hover-color);
+}

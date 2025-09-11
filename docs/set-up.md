@@ -1,43 +1,21 @@
 ---
-sidebar_label: Kontrak Kuliah Praktikum
-sidebar_position: 2
-Path: docs/kontrak-kuliah
+sidebar_label: Set Up Praktikum
+sidebar_position: 3
+Path: docs/set-up
 ---
 
-# Kontrak Kuliah: Praktikum Database Management System
+# Set Up Praktikum DBMS
 
 DBMS — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Ganjil 2025/2026
 
 ---
 
-## Tujuan Pembelajaran
+## Tujuan
 
-Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
+Setelah menyelesaikan set up ini, mahasiswa diharapkan untuk dapat:
 
-- Mengetahui cara instalasi IDE atau aplikasi untuk keperluan praktikum
-- Mengetahui materi apa saja yang akan dipelajari selama praktikum dbms
-- Menjalankan aplikasi yang diperlukan di laptop / komputer local masing" mahasiswa
-
-## Rencana Materi Pembelajaran
-
-Berikut tabel Rencana Materi Pembelajaran :
-
-<!-- | **_Pertemuan_**    | **_Topik_**                                             |
-| ------------------ | ------------------------------------------------------- |
-| **Pertemuan - 1**  | Introduction to DBMS Lab & Setting up Tools             |
-| **Pertemuan - 2**  | Building a Simple Database                              |
-| **Pertemuan - 3**  | CSS                                                     |
-| **Pertemuan - 4**  | Javascript                                              |
-| **Pertemuan - 5**  | JQuery                                                  |
-| **Pertemuan - 6**  | Ajax                                                    |
-| **Pertemuan - 7**  | PHP Native & Database MySQL                             |
-| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation     |
-| **Pertemuan - 9**  | Session & Cookie                                        |
-| **Pertemuan - 10** | Laravel 1 (MVC Routes)                                  |
-| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
-| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete)                |
-| **Pertemuan - 13** | Laravel 4 (Search Function)                             |
-| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas        | -->
+- Mengetahui cara instalasi server dan client MSSQL Server untuk keperluan praktikum
+- Menjalankan aplikasi yang diperlukan di laptop / komputer local masing - masing mahasiswa
 
 ## Requirements Tools
 
@@ -151,9 +129,9 @@ Lalu buka file SSMS-Setup-ENU.exe setelah berhasil didownload.
 
 ![gambar](/img/kontrak/23.png)
 
-**Catatan:**
+<!-- **Catatan:**
 
-- 
+-  -->
 
 ## Akhir Kata
 
@@ -162,13 +140,13 @@ Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi aplikasi sql se
 :::tip
 Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba _sprint_ kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal _copy-paste_ tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin 🥹🫶🏻, kok. Jadi, semangat terus dan nikmati prosesnya. _Good luck!_
 :::
-
+<!-- 
 :::info
 ## Referensi Tambahan
 
 - [About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
 - [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
-:::
+::: -->
 
 ## Kontributor
 

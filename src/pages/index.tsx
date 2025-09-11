@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
+import { BookOpen, ClipboardPlus } from "lucide-react";
 
 import styles from "./index.module.css";
 
@@ -24,26 +25,28 @@ function HomepageHeader() {
           >
             {siteConfig.title}
           </Heading>
-          <p className="hero__subtitle">
+          <h1 className="hero__subtitle">
             Materi, tugas, dan sumber belajar terkurasi untuk Praktikum Database
             Management System.
-          </p>
+          </h1>
           <div className={styles.actions}>
-            <Link className="button button--secondary button--lg" to="/docs">
-              Mulai Belajar
+            <Link className={clsx("button button--secondary button--lg", styles.buttonWithIcon)} to="/docs">
+              <span>Lihat Materi</span>
+              <BookOpen className={styles.buttonIcon} />
             </Link>
             <Link
-              className="button button--primary button--lg"
+              className={clsx("button button--primary button--lg", styles.buttonWithIcon)}
               to="/assignments"
             >
-              Lihat Tugas
+              <span>Lihat Tugas</span>
+              <ClipboardPlus className={styles.buttonIcon} />
             </Link>
-            <Link
+            {/* <Link
               className="button button--thirdary button--lg"
               to="https://github.com/DBMS-FATISDA-UNS/DBMS-2025"
             >
               Repo GitHub
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
