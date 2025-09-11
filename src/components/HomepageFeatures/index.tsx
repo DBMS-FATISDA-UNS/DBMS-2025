@@ -46,14 +46,13 @@ const FeatureList: FeatureItem[] = [
     },
   },
   {
-    title: "Playground SQL",
+    title: "Playground",
     description: (
       <>
-        Lingkungan interaktif untuk bereksperimen dengan kode SQL secara langsung
-        tanpa perlu instalasi.
+        Platform interaktif kalau kamu gabut dan gaada kerjaan bisa banget coba dan di ubah" 😃
       </>
     ),
-    cta: { label: "Hubungi / FAQ", to: "/playground/" },
+    cta: { label: "Playground", to: "/playground/" },
   },
 ];
 
