@@ -76,6 +76,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/logo.png",
     navbar: {
+      hideOnScroll: true,
       title: "DBMS 25/26",
       logo: {
         alt: "UNS Logo",

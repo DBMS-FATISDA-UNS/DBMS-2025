@@ -20,15 +20,31 @@
   flex-wrap: wrap;
 }
 
-.badge {
+.badgeSemester {
   display: inline-block;
-  padding: .25rem .6rem;
-  border-radius: 9999px;
-  background: rgba(30,64,175,.08);
-  border: 1px solid rgba(30,64,175,.14);
+  padding: 6px 14px;
+  border-radius: 9999px; /* kapsul */
   font-weight: 600;
-  font-size: .85rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+/* Light mode */
+html[data-theme='light'] .badgeSemester {
+  background: rgba(37, 99, 235, 0.1); /* biru muda transparan */
+  color: #1e3a8a; /* teks biru gelap agar kontras */
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Dark mode */
+html[data-theme='dark'] .badgeSemester {
+  background: rgba(255, 255, 255, 0.1); /* putih transparan */
+  color: #ffffff; /* teks putih biar jelas */
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {

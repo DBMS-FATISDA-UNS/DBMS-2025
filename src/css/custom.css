@@ -60,12 +60,19 @@
   padding: .75rem 1.25rem;
 }
 .button--secondary.button--lg {
-  background: white;
-  border: 1px solid rgba(2,6,23,.08);
+  background: rgba(20, 151, 22, 0.904);
+  color: #ffffff;
+  border: 2px solid rgba(2,6,23,.08);
 }
 [data-theme='dark'] .button--secondary.button--lg {
-  background: #0b1220;
+  background: rgb(150, 255, 152);
+  color: #000000;
   border-color: rgba(148,163,184,.18);
+}
+.button--thirdary.button--lg {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* Navbar */

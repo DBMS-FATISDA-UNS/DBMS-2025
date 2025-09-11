@@ -1,11 +1,17 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.cardCol { margin-bottom: 1rem; }
+
+.card {
+  border-radius: var(--ifm-card-border-radius);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  border: 1px solid rgba(2,6,23,.06);
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(2,6,23,.08), 0 2px 4px rgba(2,6,23,.06);
+  border-color: rgba(30,64,175,.18);
 }

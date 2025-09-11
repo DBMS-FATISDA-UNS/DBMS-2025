@@ -1,56 +1,79 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  cta?: { label: string; to: string };
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Sumber Belajar Terstruktur",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Silabus, materi, dan referensi yang disusun untuk mendukung pembelajaran
+        praktikum.
       </>
     ),
+    cta: { label: "Buka Silabus", to: "https://www.sqlservertutorial.net" },
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Google Classroom",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Platform utama untuk pengumuman, pengumpulan tugas, dan interaksi kelas
+        yang mendukung diskusi antar mahasiswa.
       </>
     ),
+    cta: {
+      label: "Lihat Classroom",
+      to: "https://classroom.google.com/c/ODA1NDg0NTM3OTQ4",
+    },
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Video Tutorial",
+    description: <>
+        Rangkaian video pembelajaran yang memandu langkah demi langkah dalam
+        memahami konsep dan praktik database.
+    </>,
+    cta: {
+      label: "Lihat Video",
+      to: "https://www.youtube.com/watch?v=xYBclb-sYQ4&t=725s",
+    },
+  },
+  {
+    title: "Playground SQL",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Lingkungan interaktif untuk bereksperimen dengan kode SQL secara langsung
+        tanpa perlu instalasi.
       </>
     ),
+    cta: { label: "Hubungi / FAQ", to: "/playground/" },
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, description, cta }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={clsx("col col--6", styles.cardCol)}>
+      <div className={clsx("card shadow--md", styles.card)}>
+        <div className="card__header">
+          <Heading as="h3">{title}</Heading>
+        </div>
+        <div className="card__body">
+          <p>{description}</p>
+        </div>
+        {cta && (
+          <div className="card__footer">
+            <Link className="button button--primary button--sm" to={cta.to}>
+              {cta.label}
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
