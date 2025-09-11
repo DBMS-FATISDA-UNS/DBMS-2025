@@ -48,6 +48,62 @@ Langkah-langkah Instalasi SQL Server hampir sama untuk semua versinya. Namun, da
 
 ![gambar](/img/kontrak/4.png)
 
+#### e.	Setelah selesai, tekan ‘Open Folder’
+
+![gambar](/img/kontrak/5.png)
+
+#### f.	Cari file “SQLServer2019-x64-ENU-Dev.iso” Mount file ISO
+
+![gambar](/img/kontrak/6.png)
+
+#### g.	Buka setup.exe
+
+![gambar](/img/kontrak/7.png)
+
+#### h.	Setelah membuka setup.exe, akan muncul window seperti di bawah. Klik “Installation” pada bagian kiri.
+
+![gambar](/img/kontrak/8.png)
+
+#### i.	Klik link paling atas seperti pada gambar di bawah.
+
+![gambar](/img/kontrak/9.png)
+
+#### j.	Klik “Specify a free edition:” dan masukkan “Developer”
+
+![gambar](/img/kontrak/10.png)
+
+#### k.	Cheklist “I accept the license terms and Privacy Statement” lalu klik next.
+
+![gambar](/img/kontrak/11.png)
+
+#### l.	Uncheck tombol “Use Microsoft Update to check for updates (Recommended) jika anda tidak ingin mendapatkan update SSMS melalui Windows Update (Otomatis).
+
+![gambar](/img/kontrak/12.png)
+
+#### m.	Jika semua Status telah “Passed” maka anda dapat klik “Next”.
+
+![gambar](/img/kontrak/13.png)
+
+#### n.	Pilih fitur yang anda inginkan. Untuk keperluan praktikum, hanya “Database Engine Services” saja yang dibutuhkan. Setelah ceklis, lalu anda dapat klik “Next”.
+
+![gambar](/img/kontrak/14.png)
+
+#### o.	Masukkan Instance ID untuk SQL Server. Instance ID bisa mengikuti nama pada gambar saja, yaitu “MSSQLSERVER”.
+
+![gambar](/img/kontrak/15.png)
+
+#### p.	Opsi “Mixed Mode” TIDAK WAJIB. Untuk keperluan praktikum, anda dapat menggunakan opsi “Windows authentication mode” kemudian add Current User.
+
+![gambar](/img/kontrak/16.png)
+
+#### q.	Verifikasi ulang fitur-fitur yang diinstal dan jika telah sesuai, klik “Install” untuk menyelesaikan instalasi.
+
+![gambar](/img/kontrak/17.png)
+
+#### r.	Setelah semua status “Succeeded” maka anda dapat klik “Close” dan instalasi SSMS telah sukses.
+
+![gambar](/img/kontrak/18.png)
+
 
 **Catatan:**
 
