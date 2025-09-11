@@ -18,6 +18,27 @@ Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
 - Mengetahui materi apa saja yang akan dipelajari selama praktikum dbms
 - Menjalankan aplikasi yang diperlukan di laptop / komputer local masing" mahasiswa
 
+## Rencana Materi Pembelajaran
+
+Berikut tabel Rencana Materi Pembelajaran :
+
+<!-- | **_Pertemuan_**    | **_Topik_**                                             |
+| ------------------ | ------------------------------------------------------- |
+| **Pertemuan - 1**  | Introduction to DBMS Lab & Setting up Tools             |
+| **Pertemuan - 2**  | Building a Simple Database                              |
+| **Pertemuan - 3**  | CSS                                                     |
+| **Pertemuan - 4**  | Javascript                                              |
+| **Pertemuan - 5**  | JQuery                                                  |
+| **Pertemuan - 6**  | Ajax                                                    |
+| **Pertemuan - 7**  | PHP Native & Database MySQL                             |
+| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation     |
+| **Pertemuan - 9**  | Session & Cookie                                        |
+| **Pertemuan - 10** | Laravel 1 (MVC Routes)                                  |
+| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
+| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete)                |
+| **Pertemuan - 13** | Laravel 4 (Search Function)                             |
+| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas        | -->
+
 ## Requirements Tools
 
 Aplikasi yang digunakan dalam praktikum ini adalah SQL Server dan SQL Server Manager Studio (SSMS). SQL Server digunakan untuk minimal versi 2016. Sedangkan SSMS digunakan minimal juga versi 2016. Berikut link untuk instalasi kedua aplikasi tersebut.
@@ -104,68 +125,59 @@ Langkah-langkah Instalasi SQL Server hampir sama untuk semua versinya. Namun, da
 
 ![gambar](/img/kontrak/18.png)
 
+## Langkah 2: Instalasi SQL Server Management Studio
+
+Langkah-langkah Instalasi SQL Server Management Studio hampir sama untuk semua versinya. Namun, dalam praktikum ini, contoh Instalasi dalam praktikum ini menggunakan SQL Server Management Studio 20.2. Berikut langkah-langkah instalasinya:
+
+#### a.	Buka link yang telah dilampirkan pada halaman pertama lalu klik link “Downlaod SQL Server Management Studio (SSMS) 20.2”.
+
+![gambar](/img/kontrak/19.png)
+
+Lalu buka file SSMS-Setup-ENU.exe setelah berhasil didownload.
+
+#### b.	Tentukan lokasi folder untuk instalasi (Untuk keperluan praktikum, biarkan default saja) lalu klik tombol “Install”. 
+
+![gambar](/img/kontrak/20.png)
+
+#### c.	Tunggu hingga selesai
+
+![gambar](/img/kontrak/21.png)
+
+#### d.	Setelah muncul “Setup Completed” anda dapat menekan tombol “Close”.
+
+![gambar](/img/kontrak/22.png)
+
+#### e.	Dengan ini, instalasi SSMS telah berhasil dilakukan.Tambahan, ketika menyalakan koneksi, khusus SSMS versi 20 ke atas, pastikan ceklis box “Trust server certificate” ketika memilih “Windows Authentication”.
+
+![gambar](/img/kontrak/23.png)
 
 **Catatan:**
 
-- Pastikan kamu memilih IDE yang sesuai dengan jenis proyek yang akan dikerjakan.
-- Jangan ragu untuk mengeksplorasi fitur-fitur IDE (contoh: _extensions_ atau _plugin_) dan memanfaatkan sumber daya pendukung, seperti dokumentasi dan tutorial, untuk meningkatkan produktivitas dalam pengembangan perangkat lunak.
-
-## Extension Yang Diperlukan
-
-Sementara temen" mungkin butuh extension ini dan mungkin beberapa dari kalian sudah ada yang punya:
-
-1. Code Runner, Extension ID -> **`formulahendry.code-runner`**
-2. Live Server, Extension ID -> **`ritwickdey.LiveServer`**
-3. HTML CSS Support, Extension ID -> **`ecmel.vscode-html-css`**
-4. Auto Rename Tag, Extension ID -> **`formulahendry.auto-rename-tag`**
-
-## Rencana Materi Pembelajaran
-
-Berikut tabel Rencana Materi Pembelajaran :
-
-| **_Pertemuan_**    | **_Materi_**                                            |
-| ------------------ | ------------------------------------------------------- |
-| **Pertemuan - 1**  | Kontrak Praktikum dan Instalasi Web Server              |
-| **Pertemuan - 2**  | HTML                                                    |
-| **Pertemuan - 3**  | CSS                                                     |
-| **Pertemuan - 4**  | Javascript                                              |
-| **Pertemuan - 5**  | JQuery                                                  |
-| **Pertemuan - 6**  | Ajax                                                    |
-| **Pertemuan - 7**  | PHP Native & Database MySQL                             |
-| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation     |
-| **Pertemuan - 9**  | Session & Cookie                                        |
-| **Pertemuan - 10** | Laravel 1 (MVC Routes)                                  |
-| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
-| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete)                |
-| **Pertemuan - 13** | Laravel 4 (Search Function)                             |
-| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas        |
-
-## Instalasi Web Server
-
-### Langkah 1: Pemilihan App buat akses web server
-
-Pilihlah _Aplikasi_ yang sesuai dengan preferensimu (Composer membutuhkan PHP. Pastikan kamu sudah memiliki PHP atau XAMPP karena XAMPP sudah memiliki PHP di dalamnya):
+- 
 
 ## Akhir Kata
 
-Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi IDE dan instalasi Web Server dan memahami rencana pembelajaran untuk praktikum _PEMWEB_ semester ini 🔥.
+Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi aplikasi sql server dan instalasi aplikasi ssms dan memahami rencana pembelajaran untuk praktikum _DBMS_ semester ini 🔥.
 
+:::tip
 Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi, ya. Santai saja, ini bukan lomba _sprint_ kok; pelan-pelan saja, pasti bisa. Kode-kode itu tidak harus langsung masuk ke otak, tapi yang penting dimengerti, kan? Jadi, **jangan sampai asal _copy-paste_ tanpa mengerti** ya, nanti jadi bingung sendiri. Kalau memang buntu, jangan malu untuk bertanya ke teman atau asisten dosen. Asisten dosen sudah pasti siap bantuin 🥹🫶🏻, kok. Jadi, semangat terus dan nikmati prosesnya. _Good luck!_
+:::
 
+:::info
 ## Referensi Tambahan
 
 - [About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
 - [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+:::
 
 ## Kontributor
 
 - Addin Hadi Rizal
-- Abraham Willem Hersubagyo
-- Bani Rijal Barru Faza
+- Clementine Dwayani Danitasari
 - Mohammed Nasser
 
+:::warning
 ## Credits
 
-Tutorial ini dikembangkan oleh Asisten Praktikum Pemrograman Website 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Pemrograman Website dapat menyelesaikan tutorial saat sesi lab berlangsung.
-
-[GitHub]: https://github.com/
+Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data dapat menyelesaikan tutorial saat sesi lab berlangsung.
+:::
