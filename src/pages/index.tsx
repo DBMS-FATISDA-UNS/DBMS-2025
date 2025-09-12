@@ -41,12 +41,12 @@ function HomepageHeader() {
               <span>Lihat Tugas</span>
               <ClipboardPlus className={styles.buttonIcon} />
             </Link>
-            {/* <Link
+            <Link
               className="button button--thirdary button--lg"
               to="https://github.com/DBMS-FATISDA-UNS/DBMS-2025"
             >
               Repo GitHub
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
