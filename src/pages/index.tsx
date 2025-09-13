@@ -46,7 +46,6 @@ function HomepageHeader() {
               to="https://github.com/DBMS-FATISDA-UNS/DBMS-2025"
             >
               Repo GitHub
-              <GitBranch className={styles.buttonIcon} />
             </Link>
           </div>
         </div>
