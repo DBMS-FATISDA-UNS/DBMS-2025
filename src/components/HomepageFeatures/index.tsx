@@ -38,7 +38,12 @@ const FeatureList: FeatureItem[] = [
       },
       {
         label: "Classroom Kelas B",
-        to: "https://classroom.google.com/c/XXXXXXXXXXXXXXX", // ganti dengan link B
+        to: "https://classroom.google.com/u/0/c/ODA1NTM5NzI3Njc0",
+        variant: "primary",
+      },
+      {
+        label: "Classroom PSDKU",
+        to: "https://classroom.google.com/u/0/c/ODA1NTQyNDUyNzA0",
         variant: "primary",
       },
     ],

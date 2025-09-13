@@ -5,7 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-import { BookOpen, ClipboardPlus } from "lucide-react";
+import { BookOpen, ClipboardPlus, GitBranch } from "lucide-react";
 
 import styles from "./index.module.css";
 
@@ -41,12 +41,13 @@ function HomepageHeader() {
               <span>Lihat Tugas</span>
               <ClipboardPlus className={styles.buttonIcon} />
             </Link>
-            {/* <Link
+            <Link
               className="button button--thirdary button--lg"
               to="https://github.com/DBMS-FATISDA-UNS/DBMS-2025"
             >
               Repo GitHub
-            </Link> */}
+              <GitBranch className={styles.buttonIcon} />
+            </Link>
           </div>
         </div>
       </div>
