@@ -108,13 +108,28 @@ const config: Config = {
       ],
     },
     footer: {
-      // use CSS tokens to match page theme for both light/dark
+      style: "dark",
+      links: [
+        {
+          title: "More",
+          items: [
+            {
+              label: "Assignments",
+              to: "/assignments/",
+            },
+            {
+              href: "https://github.com/DBMS-FATISDA-UNS/DBMS-2025",
+              label: "GitHub",
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} DBMS FATISDA UNS.`,
     },
     docs: {
       sidebar: {
         hideable: true,
-        autoCollapseCategories: true
+        autoCollapseCategories: true,
       },
     },
     prism: {
