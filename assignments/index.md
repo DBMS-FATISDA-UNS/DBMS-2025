@@ -4,4 +4,8 @@ sidebar_position: 1
 Path: assignments/index
 ---
 
-# Informasi (Tugas Individu)
+# Informasi 
+
+:::note
+Coming Soon 😆
+:::
