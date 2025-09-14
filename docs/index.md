@@ -17,44 +17,15 @@ DBMS — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Univer
 
 3. Mahasiswa dapat bertanya kepada asisten dosen selama jam sesi lab.
 
-<!-- 4. Perhatikan rubrik penilaian yang tersedia di setiap slot submisi tutorial untuk mendapatkan nilai sempurna. -->
-
 ## Rencana Materi Pembelajaran
 
-Berikut tabel Rencana Materi Pembelajaran :
+`Akses Menggunakan Akun SSO`
 
-<!-- | **_Pertemuan_**    | **_Topik_**                                             |
-| ------------------ | ------------------------------------------------------- |
-| **Pertemuan - 1**  | Introduction to DBMS Lab & Setting up Tools             |
-| **Pertemuan - 2**  | Building a Simple Database                              |
-| **Pertemuan - 3**  | CSS                                                     |
-| **Pertemuan - 4**  | Javascript                                              |
-| **Pertemuan - 5**  | JQuery                                                  |
-| **Pertemuan - 6**  | Ajax                                                    |
-| **Pertemuan - 7**  | PHP Native & Database MySQL                             |
-| **Pertemuan - 8**  | OOP (Object Oriented Programming) + Form Validation     |
-| **Pertemuan - 9**  | Session & Cookie                                        |
-| **Pertemuan - 10** | Laravel 1 (MVC Routes)                                  |
-| **Pertemuan - 11** | Laravel 2 (Migration Seeder Factory) & (Authentication) |
-| **Pertemuan - 12** | Laravel 3 (Create, Read, Update, Delete)                |
-| **Pertemuan - 13** | Laravel 4 (Search Function)                             |
-| **Pertemuan - 14** | Checking Tugas Besar dan Pengumpulan Akhir Tugas        | -->
+Berikut link docs untuk rencana materi pembelajaran DBMS kelas A & B : [Rencana Pembelajaran](https://docs.google.com/document/d/12enlVPoVZqyjxzEmlbZUn_WGF23gadqP/edit?usp=sharing&ouid=103843316818891282446&rtpof=true&sd=true)
 
-<!-- **Catatan:**
-
--  -->
-
-## Akhir Kata
-
-<!-- Selamat, ya! Kamu sudah menyelesaikan tutorial tentang instalasi aplikasi sql server dan instalasi aplikasi ssms dan memahami rencana pembelajaran untuk praktikum _DBMS_ semester ini 🔥. -->
-
-<!-- 
-:::info
-## Referensi Tambahan
-
-- [About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
-- [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
-::: -->
+:::note
+Untuk Rencana Pembelajaran bisa update sewaktu" jadi sangat dianjurkan untuk rutin mengecek
+:::
 
 ## Kontributor
 
