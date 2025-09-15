@@ -11,7 +11,7 @@ DBMS — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Univer
 ---
 
 ## Kontrak Kuliah
-1. Tutorial rilis setiap minggu.
+1. Materi rilis setiap minggu.
 
 2. Tenggat waktu pengerjaan adalah di akhir jam sesi lab masing - masing kelas.
 
@@ -21,7 +21,13 @@ DBMS — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Univer
 
 `Akses Menggunakan Akun SSO`
 
-Berikut link docs untuk rencana materi pembelajaran DBMS kelas A & B : [Rencana Pembelajaran](https://docs.google.com/document/d/12enlVPoVZqyjxzEmlbZUn_WGF23gadqP/edit?usp=sharing&ouid=103843316818891282446&rtpof=true&sd=true)
+Berikut link docs untuk rencana materi pembelajaran DBMS kelas A & B Informatika UNS : 
+
+[Rencana Pembelajaran](https://docs.google.com/document/d/12enlVPoVZqyjxzEmlbZUn_WGF23gadqP/edit?usp=sharing&ouid=103843316818891282446&rtpof=true&sd=true)
+
+Berikut link docs untuk rencana materi pembelajaran DBMS kelas A Informatika PSDKU UNS : 
+
+[Rencana Pembelajaran](https://docs.google.com/document/d/1yVtX5jaOKqllH3fJmfUNeaQiqzRijigk/edit?usp=sharing&ouid=103843316818891282446&rtpof=true&sd=true)
 
 :::note
 Untuk Rencana Pembelajaran bisa update sewaktu" jadi sangat dianjurkan untuk rutin mengecek
