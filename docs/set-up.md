@@ -1,6 +1,6 @@
 ---
 sidebar_label: Set Up Praktikum
-sidebar_position: 3
+sidebar_position: 2
 Path: docs/set-up
 ---
 
@@ -144,8 +144,8 @@ Ke depannya, kalau sedang mengerjakan tugas, jangan grogi sama banyaknya materi,
 :::info
 ## Referensi Tambahan
 
-- [About pull request merges](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
-- [Resolving a merge conflict on GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+- [Getting Started by SqlServerTutorial](https://www.sqlservertutorial.net/getting-started/)
+- [Referensi Video Tutorial](https://youtu.be/deN8gMwEWCs)
 :::
 
 ## Kontributor
