@@ -33,17 +33,17 @@ const FeatureList: FeatureItem[] = [
     ctas: [
       {
         label: "Classroom Kelas A",
-        to: "https://classroom.google.com/c/ODA1NDg0NTM3OTQ4",
+        to: "https://classroom.google.com/c/ODA1NDg0NTM3OTQ4?cjc=fdox6nfa",
         variant: "primary",
       },
       {
         label: "Classroom Kelas B",
-        to: "https://classroom.google.com/u/0/c/ODA1NTM5NzI3Njc0",
+        to: "https://classroom.google.com/c/ODA1NTM5NzI3Njc0?cjc=pg5wukrw",
         variant: "primary",
       },
       {
         label: "Classroom PSDKU",
-        to: "https://classroom.google.com/u/0/c/ODA1NTQyNDUyNzA0",
+        to: "https://classroom.google.com/c/ODA1NTQyNDUyNzA0?cjc=zuuynih7",
         variant: "primary",
       },
     ],
