@@ -151,9 +151,56 @@ ON UPDATE action
 ON DELETE action;
 ```
 
+```sql
+CREATE TABLE [ORDER_CART] (
+    [OrderID] INT,
+    [ProductID] INT,
+
+    [Amount] INT,
+
+    CONSTRAINT [PK_OrderCart] PRIMARY KEY ([OrderID], [ProductID]),
+    CONSTRAINT [FK_OrderCart_OrderID] FOREIGN KEY ([OrderID]) REFERENCES [ORDER] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_OrderCart_ProductID] FOREIGN KEY ([ProductID]) REFERENCES [PRODUCT] ([ID]) ON DELETE CASCADE
+);
+```
+
 Action yang dilakukan antara lain:
 
 `NO ACTION`, `CASCADE`, `SET NULL`, `SET DEFAULT`
+
+Berikut adalah penjelasan untuk setiap action yang disebutkan di slide, menggunakan contoh Tabel_Mahasiswa (induk) dan Tabel_Nilai (anak):
+
+1. CASCADE (Mengikuti)
+
+Artinya: Apa pun yang terjadi pada data induk, data anak akan mengikutinya secara otomatis.
+
+**ON DELETE CASCADE**: Jika data seorang mahasiswa (misal NIM '123') dihapus dari Tabel_Mahasiswa, maka semua data nilai yang berhubungan dengan NIM '123' di Tabel_Nilai juga akan otomatis ikut terhapus.
+
+**ON UPDATE CASCADE**: Jika NIM mahasiswa diubah dari '123' menjadi '456' di Tabel_Mahasiswa, maka semua nilai di Tabel_Nilai yang tadinya memiliki NIM '123' akan otomatis ikut berubah menjadi '456'.
+
+2. SET NULL (Atur menjadi NULL)
+
+Artinya: Jika data induk diubah/dihapus, kolom Foreign Key di tabel anak akan diatur menjadi NULL (kosong/tidak bernilai).
+
+Syarat: Kolom Foreign Key di tabel anak harus diizinkan untuk bernilai NULL.
+
+**ON DELETE SET NULL**: Jika data mahasiswa dengan NIM '123' dihapus dari Tabel_Mahasiswa, maka pada Tabel_Nilai, semua baris yang memiliki NIM_mahasiswa '123' akan diubah nilainya menjadi NULL. Data nilainya tetap ada, tapi tidak lagi terhubung ke mahasiswa manapun.
+
+3. SET DEFAULT (Atur ke Nilai Default)
+
+Artinya: Jika data induk diubah/dihapus, kolom Foreign Key di tabel anak akan diatur ke nilai default yang sudah ditentukan sebelumnya.
+
+Syarat: Kolom Foreign Key harus memiliki nilai DEFAULT yang telah didefinisikan.
+
+**ON DELETE SET DEFAULT**: Misalkan kita punya nilai DEFAULT untuk NIM_mahasiswa adalah '000' (NIM untuk mahasiswa anonim). Jika mahasiswa NIM '123' dihapus, maka di Tabel_Nilai, NIM_mahasiswa yang tadinya '123' akan berubah menjadi '000'.
+
+4. NO ACTION (atau RESTRICT)
+
+Artinya: Database akan menolak operasi UPDATE atau DELETE pada tabel induk jika masih ada data yang terhubung di tabel anak.
+
+Ini adalah perilaku default di banyak sistem database jika tidak ada action yang ditentukan.
+
+**ON DELETE NO ACTION**: Jika kita mencoba menghapus mahasiswa dengan NIM '123' dari Tabel_Mahasiswa, tetapi masih ada data nilai untuk NIM tersebut di Tabel_Nilai, maka database akan menampilkan error dan proses penghapusan akan dibatalkan. Kita harus menghapus data nilainya terlebih dahulu sebelum bisa menghapus data mahasiswanya.
 
 ### Unique Key
 
@@ -260,7 +307,6 @@ CREATE TABLE log_sesi (
 ### 3. Tipe Data Numerik
 | Tipe | Keterangan | Rentang/Presisi | Catatan |
 |---|---|---|---|
-| `BIT` | Boolean 0/1 | — | Efisien untuk flag. |
 | `TINYINT`/`SMALLINT`/`INT`/`BIGINT` | Bilangan bulat | 0–255 / ±32K / ±2.1B / ±9e18 | Pilih sesuai rentang data. |
 | `DECIMAL(p,s)` / `NUMERIC(p,s)` | Presisi tetap | p≤38 | **Untuk uang**/nilai presisi. |
 | `FLOAT`/`REAL` | Pecahan biner | — | Hindari untuk uang (ada *rounding error*). |
@@ -276,3 +322,146 @@ CREATE TABLE transaksi (
 ```
 
 ## Data Manipulation Language (DML) Basic
+
+DML, singkatan dari Data Manipulation Language, adalah bagian dari bahasa SQL (Structured Query Language) yang digunakan untuk memanipulasi data dalam basis data relasional. DML digunakan untuk melakukan operasi-operasi seperti menambahkan, mengubah, menghapus, atau mengambil data dari tabel dalam basis data.
+
+Beberapa perintah yang termasuk dalam DML adalah:
+
+`INSERT`: Digunakan untuk menambahkan data baru ke dalam tabel.
+
+`UPDATE`: Digunakan untuk mengubah data yang sudah ada dalam tabel.
+
+`DELETE`: Digunakan untuk menghapus data dari tabel.
+
+`SELECT`: Meskipun sering kali dianggap sebagai bagian dari DQL (Data Query Language), perintah `SELECT` juga dapat dianggap sebagai bagian dari DML karena digunakan untuk mengambil data dari tabel.
+
+### SELECT
+
+Pernyataan **SELECT** digunakan untuk memilih atribut yang akan ditampilkan atau dimanipulasi dari tabel. Dengan **SELECT**, kita dapat memilih satu atau lebih atribut dari satu atau lebih tabel, serta dapat memberikan alias pada atribut yang dipilih. Pernyataan ini terdiri dari dua bagian utama, yaitu **SELECT** dan **FROM**.
+
+- SELECT  : Menentukan atribut atau kolom yang ingin ditampilkan.
+- FROM    : Menentukan tabel asal dari atribut atau kolom yang dipilih. FROM sangat penting karena mengidentifikasi sumber data yang akan diambil.
+
+```sql
+SELECT
+
+select_list
+
+FROM
+
+schema_name.table_name;
+```
+
+```sql
+SELECT
+
+first_name,
+
+last_name
+
+FROM
+
+sales.customers;
+```
+
+### INSERT
+
+Pernyataan **INSERT** digunakan untuk memasukkan data ke dalam tabel. Pernyataan ini memerlukan nama tabel, nama atribut, dan data yang akan dimasukkan secara berurutan. Pernyataan **INSERT** terdiri dari 2 bagian utama, yaitu **INSERT INTO** dan **VALUES**.
+
+- INSERT INTO: Menyatakan nama tabel dan atribut yang akan dimasukkan data.
+- VALUES: Menentukan nilai-nilai data yang akan dimasukkan ke dalam atribut sesuai urutan yang diberikan.
+
+```sql
+INSERT INTO table_name (column_list)
+
+VALUES (value_list);
+```
+
+```sql
+INSERT INTO sales.promotions (
+
+promotion_name,
+
+discount,
+
+start_date,
+
+expired_date
+
+)
+
+VALUES
+
+(
+
+'2018 Summer Promotion',
+
+0.15,
+
+'20180601',
+
+'20180901'
+
+);
+```
+
+### UPDATE
+
+Pernyataan **Update** digunakan untuk memperbarui data pada tabel. Pernyataan ini memerlukan nama tabel yang akan diperbarui, atribut yang ingin diubah, serta nilai baru untuk atribut tersebut, serta kondisi yang bersifat opsional. Terdapat 3 keywords pada penggunaan **Update**, yaitu **UPDATE**, **SET**, dan **WHERE**.
+
+- UPDATE : Menyatakan nama tabel yang akan diperbarui.
+- SET : Menentukan nama atribut yang ingin diperbarui dan nilai baru yang akan diberikan pada atribut tersebut.
+- WHERE : Menentukan kondisi untuk memilih baris yang akan diperbarui. Jika dihilangkan, maka semua baris dalam tabel akan diperbarui dengan nilai baru. Opsional, tetapi sangat penting!
+
+```sql
+UPDATE table_name
+
+SET c1 = v1, c2 = v2, ... cn = vn
+
+[WHERE condition]
+```
+
+```sql
+UPDATE sales.taxes
+
+SET max_local_tax_rate = 0.02,
+
+avg_local_tax_rate = 0.01
+
+WHERE
+
+max_local_tax_rate = 0.01;
+```
+
+### DELETE
+
+Pernyataan **Delete** digunakan untuk menghapus data yang ada pada tabel. Pernyataan ini membutuhkan nama tabel sebagai target data yang ingin dihapus. Penggunaan atribut adalah opsional, dan biasanya tidak diperlukan karena **Delete** menghapus seluruh baris yang sesuai dengan kondisi yang diberikan, bukan kolom tertentu. Pernyataan **Delete** terdiri dari tiga bagian, yaitu **DELETE**, **FROM**, dan **WHERE**.
+
+- DELETE : Menginstruksikan untuk menghapus data.
+- FROM : Menentukan lokasi tabel yang datanya ingin dihapus.
+- WHERE : Menentukan kondisi. Jika WHERE dihilangkan, maka seluruh data yang ada pada tabel akan dihapus.
+
+
+```sql
+DELETE [ TOP ( expression ) [ PERCENT ] ]
+
+FROM table_name
+
+[WHERE search_condition];
+```
+
+```sql
+DELETE TOP 10 FROM target_table;
+```
+
+```sql
+DELETE
+
+FROM
+
+production.product_history
+
+WHERE
+
+model_year = 2017;
+```
