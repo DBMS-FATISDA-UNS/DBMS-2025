@@ -1,6 +1,6 @@
 ---
 id: pertemuan-2
-title: Pertemuan 2 — DDL & DML Dasar (SQL Server)
+title: DDL & DML Dasar (SQL Server)
 sidebar_label: Pertemuan 2
 sidebar_position: 3
 slug: /pertemuan-2
