@@ -1,4 +1,4 @@
-<!-- ---
+---
 id: pertemuan-3
 title: Lab 1 Building a Simple Database
 sidebar_label: Pertemuan 3
@@ -26,4 +26,4 @@ Tugas dikumpulkan dalam 1 file source code dalam bentuk **SQL** dengan ketentuan
 
 [Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1DrxYqehUlhj_GRY-BcGMsjUiUYqgpGIN/view?usp=sharing)
 
-Pengumpulan tugas pada `Google Classroom` masing" kelas. -->
+Pengumpulan tugas pada `Google Classroom` masing" kelas.
