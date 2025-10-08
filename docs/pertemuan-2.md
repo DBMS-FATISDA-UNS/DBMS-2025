@@ -465,3 +465,15 @@ WHERE
 
 model_year = 2017;
 ```
+
+## Kontributor
+
+- Addin Hadi Rizal
+- Clementine Dwayani Danitasari
+- Mohammed Nasser
+
+:::warning
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data dapat menyelesaikan tutorial saat sesi lab berlangsung.
+:::

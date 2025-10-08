@@ -27,3 +27,15 @@ Tugas dikumpulkan dalam 1 file source code dalam bentuk **SQL** dengan ketentuan
 [Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1DrxYqehUlhj_GRY-BcGMsjUiUYqgpGIN/view?usp=sharing)
 
 Pengumpulan tugas pada `Google Classroom` masing" kelas.
+
+## Kontributor
+
+- Addin Hadi Rizal
+- Clementine Dwayani Danitasari
+- Mohammed Nasser
+
+:::warning
+## Credits
+
+Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data dapat menyelesaikan tutorial saat sesi lab berlangsung.
+:::
