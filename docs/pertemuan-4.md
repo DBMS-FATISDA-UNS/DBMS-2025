@@ -6,27 +6,48 @@ sidebar_position: 5
 slug: /pertemuan-4
 ---
 
-> **Topik:** *Performing Basic Queries*  
-> **Platform:** Microsoft SQL Server (≥2019) & SSMS  
-> **DBMS** — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Ganjil 2025/2026
+> **Topik:** *Performing Basic Queries*
+> **Platform:** Microsoft SQL Server (≥2019) & SSMS
+> **DBMS** — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Ganjil
+2025/2026
 
 ## Tujuan Pembelajaran
-Mahasiswa mempelajari cara melakukan query sederhana (untuk mendapatkan informasi) dari satu tabel dengan menggunakan berbagai klausa dan fungsi dasar SQL. Dalam prosesnya, mahasiswa tidak hanya memahami cara menampilkan data, tetapi juga mempelajari bagaimana memfilter, mengurutkan, membatasi, dan memodifikasi hasil query agar sesuai dengan kebutuhan analisis data.
+Mahasiswa mempelajari cara melakukan query sederhana (untuk mendapatkan informasi) dari satu tabel dengan menggunakan
+berbagai klausa dan fungsi dasar SQL. Dalam prosesnya, mahasiswa tidak hanya memahami cara menampilkan data, tetapi juga
+mempelajari bagaimana memfilter, mengurutkan, membatasi, dan memodifikasi hasil query agar sesuai dengan kebutuhan
+analisis data.
+
+## Evaluasi Hasil Latihan Lab 1
+
+- Untuk tabel continents, cities, religions, organizations pada `primary key` tambahkan `IDENTITY (1,1)` yang artinya
+nanti agar sql server otomatis mengisi primary key nya dengan awalan angka 1 dan kelipatan 1 untuk angka berikutnya.
+
+## 🔽 Unduh File Lab 1
+
+Kamu bisa mengunduh file SQL untuk latihan dari link berikut:
+
+- [📄 Mondial_Ujian_schema-2.sql](/lab/lab1/Mondial_Ujian_schema-2.sql)
+- [📄 Mondial_Ujian_data-2.sql](/lab/lab1/Mondial_Ujian_data-2.sql)
+
 
 ## SELECT
 
-Pernyataan ‘SELECT’ digunakan untuk memilih atribut yang akan ditampilkan atau dimanipulasi dari tabel. Dengan ‘SELECT’, kita dapat memilih satu atau lebih atribut dari satu atau lebih tabel, serta dapat memberikan alias pada atribut yang dipilih. Pernyataan ini terdiri dari dua bagian utama, yaitu ‘SELECT’ dan ‘FROM’.
+Pernyataan ‘SELECT’ digunakan untuk memilih atribut yang akan ditampilkan atau dimanipulasi dari tabel. Dengan ‘SELECT’,
+kita dapat memilih satu atau lebih atribut dari satu atau lebih tabel, serta dapat memberikan alias pada atribut yang
+dipilih. Pernyataan ini terdiri dari dua bagian utama, yaitu ‘SELECT’ dan ‘FROM’.
 
 - SELECT: Menentukan atribut atau kolom yang ingin ditampilkan.
-- FROM: Menentukan tabel asal dari atribut atau kolom yang dipilih. FROM sangat penting karena mengidentifikasi sumber data yang akan diambil.
+- FROM: Menentukan tabel asal dari atribut atau kolom yang dipilih. FROM sangat penting karena mengidentifikasi sumber
+data yang akan diambil.
 
 Contoh syntax Select:
 
 ```sql
-    SELECT first_name FROM actor;
+SELECT first_name FROM actor;
 ```
 
-Select pada contoh di atas digunakan untuk memilih ‘first_name’ dari tabel ‘actor’. Hasilnya adalah seluruh data yang ada di dalam ‘first_name’.  Berikut result yang akan muncul ketika dicoba dalam SSMS.
+Select pada contoh di atas digunakan untuk memilih ‘first_name’ dari tabel ‘actor’. Hasilnya adalah seluruh data yang
+ada di dalam ‘first_name’. Berikut result yang akan muncul ketika dicoba dalam SSMS.
 
 Latihan Syntax Select :
 
@@ -39,24 +60,27 @@ Cobalah kedua latihan di atas pada SSMS dan perhatikan hasilnya!
 
 ## WHERE
 
-Pernyataan ‘WHERE’ digunakan untuk memfilter baris data berdasarkan kondisi tertentu. Dengan ‘WHERE’, kita dapat menentukan kriteria yang harus dipenuhi agar data ditampilkan.
+Pernyataan ‘WHERE’ digunakan untuk memfilter baris data berdasarkan kondisi tertentu. Dengan ‘WHERE’, kita dapat
+menentukan kriteria yang harus dipenuhi agar data ditampilkan.
 
 WHERE: Menentukan kondisi atau syarat yang harus dipenuhi oleh data yang diambil.
 
 Contoh syntax:
 
 ```sql
-SELECT first_name, last_name 
+SELECT first_name, last_name
 FROM actor
 WHERE first_name = 'Nick';
 ```
 
-Pernyataan di atas akan menampilkan data first_name dan last_name dari tabel actor yang memiliki first_name bernilai ‘Nick’.
+Pernyataan di atas akan menampilkan data first_name dan last_name dari tabel actor yang memiliki first_name bernilai
+‘Nick’.
 Hasilnya adalah hanya baris yang memenuhi kondisi tersebut.
 
 ## AND
 
-Operator ‘AND’ digunakan untuk menggabungkan dua atau lebih kondisi dalam klausa WHERE. Semua kondisi yang dihubungkan dengan AND harus benar agar baris data ditampilkan.
+Operator ‘AND’ digunakan untuk menggabungkan dua atau lebih kondisi dalam klausa WHERE. Semua kondisi yang dihubungkan
+dengan AND harus benar agar baris data ditampilkan.
 
 Contoh syntax:
 
@@ -91,7 +115,8 @@ Contoh syntax:
 SELECT * FROM actor WHERE first_name IN ('Nick', 'Penelope', 'Ed');
 ```
 
-Pernyataan tersebut akan menampilkan semua data dari tabel actor yang memiliki first_name bernilai Nick, Penelope, atau Ed.
+Pernyataan tersebut akan menampilkan semua data dari tabel actor yang memiliki first_name bernilai Nick, Penelope, atau
+Ed.
 Hasilnya adalah baris yang sesuai dengan daftar nilai yang disebutkan.
 
 ## BETWEEN
@@ -104,7 +129,8 @@ Contoh syntax:
 SELECT * FROM payment WHERE amount BETWEEN 5 AND 10;
 ```
 
-Pernyataan di atas akan menampilkan semua data dari tabel payment dengan nilai amount di antara 5 dan 10 (termasuk 5 dan 10). Hasilnya adalah baris dengan nilai amount ≥ 5 dan ≤ 10.
+Pernyataan di atas akan menampilkan semua data dari tabel payment dengan nilai amount di antara 5 dan 10 (termasuk 5 dan
+10). Hasilnya adalah baris dengan nilai amount ≥ 5 dan ≤ 10.
 
 ## LIKE
 
@@ -125,22 +151,25 @@ Pernyataan di atas akan menampilkan semua aktor yang first_name-nya diawali huru
 Misalnya: Adam, Angela, Arthur, dll.
 
 ## COLUMN ALIAS
-Alias digunakan untuk memberikan nama sementara pada kolom agar hasil query lebih mudah dibaca. Alias dapat ditulis dengan atau tanpa kata kunci AS.
+Alias digunakan untuk memberikan nama sementara pada kolom agar hasil query lebih mudah dibaca. Alias dapat ditulis
+dengan atau tanpa kata kunci AS.
 
 Contoh syntax:
 ```sql
 SELECT first_name AS [Nama Depan], last_name AS[Nama Belakang] FROM actor;
 ```
 
-Pernyataan di atas menampilkan kolom first_name dan last_name, tetapi dengan judul kolom yang diubah menjadi Nama Depan dan Nama Belakang.
+Pernyataan di atas menampilkan kolom first_name dan last_name, tetapi dengan judul kolom yang diubah menjadi Nama Depan
+dan Nama Belakang.
 Alias tidak mengubah nama kolom di tabel asli, hanya pada tampilan hasil query.
 
 ## ORDER BY
 
-Pernyataan ‘ORDER BY’ digunakan untuk mengurutkan hasil query berdasarkan satu atau lebih kolom, baik secara ASC (naik) atau DESC (turun).
+Pernyataan ‘ORDER BY’ digunakan untuk mengurutkan hasil query berdasarkan satu atau lebih kolom, baik secara ASC (naik)
+atau DESC (turun).
 
 Contoh syntax:
-```sql 
+```sql
 SELECT first_name, last_name FROM actor ORDER BY first_name ASC;
 ```
 
@@ -169,7 +198,7 @@ FETCH menentukan berapa banyak baris yang akan diambil setelahnya.
 
 Contoh syntax:
 ```sql
-SELECT * 
+SELECT *
 FROM actor
 ORDER BY actor_id
 OFFSET 10 ROWS FETCH NEXT 5 ROWS ONLY;
