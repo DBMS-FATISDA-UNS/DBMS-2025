@@ -30,7 +30,9 @@ Download file schema di Classroom masing" kelas
 
 ### INNER JOIN
 
-INNER JOIN adalah salah satu jenis operasi JOIN dalam SQL yang digunakan untuk menggabungkan baris dari dua atau lebih tabel berdasarkan kondisi tertentu. Operasi ini hanya mengembalikan baris-baris di mana terdapat kecocokan (match) antara kolom pada tabel yang digabungkan.
+**INNER JOIN** adalah salah satu jenis operasi JOIN dalam SQL yang digunakan untuk menggabungkan baris dari dua atau lebih tabel berdasarkan kondisi tertentu. Operasi ini hanya mengembalikan baris-baris di mana terdapat kecocokan (match) antara kolom pada tabel yang digabungkan.
+
+**INNER JOIN** merupakan DEFAULT dari perintah JOIN di SQL Server.
 
 Ciri utama INNER JOIN:
 - Mengembalikan hanya data yang cocok di kedua tabel.
@@ -70,9 +72,9 @@ s.AlbumID = a.ID
 
 ### LEFT JOIN
 
-LEFT JOIN adalah jenis JOIN dalam SQL yang digunakan untuk menggabungkan data dari dua tabel. 
+**LEFT JOIN** adalah jenis JOIN dalam SQL yang digunakan untuk menggabungkan data dari dua tabel. 
 
-Dalam LEFT JOIN, semua baris dari tabel kiri (left table) akan ditampilkan dalam hasil, meskipun tidak ada data yang cocok di tabel kanan (right table). 
+Dalam **LEFT JOIN**, semua baris dari tabel kiri (left table) akan ditampilkan dalam hasil, meskipun tidak ada data yang cocok di tabel kanan (right table). 
 
 Jika tidak ada kecocokan, kolom dari tabel kanan akan diisi dengan nilai NULL.
 
@@ -110,9 +112,9 @@ s.AlbumID = a.ID
 
 ### RIGHT JOIN
 
-RIGHT JOIN adalah jenis JOIN dalam SQL yang digunakan untuk menggabungkan data dari dua tabel. 
+**RIGHT JOIN** adalah jenis JOIN dalam SQL yang digunakan untuk menggabungkan data dari dua tabel. 
 
-Dalam RIGHT JOIN, semua baris dari tabel kanan (right table) akan ditampilkan dalam hasil, meskipun tidak ada data yang cocok di tabel kiri (left table). 
+Dalam **RIGHT JOIN**, semua baris dari tabel kanan (right table) akan ditampilkan dalam hasil, meskipun tidak ada data yang cocok di tabel kiri (left table). 
 
 Jika tidak ada kecocokan, kolom dari tabel kiri akan diisi dengan nilai NULL.
 
@@ -150,7 +152,7 @@ s.AlbumID = a.ID
 
 ### FULL OUTER JOIN
 
-FULL OUTER JOIN mengembalikan semua baris dari tabel kanan dan baris dari tabel kiri.
+**FULL OUTER JOIN** mengembalikan semua baris dari tabel kanan dan baris dari tabel kiri.
 
 Jika tidak ditemukan baris yang cocok dari tabel kiri maupun kanan, maka nilai kolom akan diisi
 dengan NULL.
@@ -189,9 +191,9 @@ s.AlbumID = a.ID
 
 ### CROSS JOIN
 
-CROSS JOIN menghasilkan _cartesian product_ antara dua tabel, yang berarti setiap baris dari tabel pertama akan digabungkan dengan setiap baris dari tabel kedua.
+**CROSS JOIN** menghasilkan _cartesian product_ antara dua tabel, yang berarti setiap baris dari tabel pertama akan digabungkan dengan setiap baris dari tabel kedua.
 
-CROSS JOIN biasanya digunakan secara hati-hati karena dapat menghasilkan dataset yang sangat besar.
+**CROSS JOIN** biasanya digunakan secara hati-hati karena dapat menghasilkan dataset yang sangat besar.
 
 ![sql](/img/p5/6.png)
 
