@@ -1,33 +1,26 @@
 ---
 id: pertemuan-5
-title: Lab 2 Basic Queries
+title: Performing Advanced Queries
 sidebar_label: Pertemuan 5
 sidebar_position: 6
 slug: /pertemuan-5
 ---
 
-> **Topik:** *Lab 2 Basic Queries*  
+> **Topik:** *Performing Advanced Queries*  
 > **Platform:** Microsoft SQL Server (≥2019) & SSMS  
 > **DBMS** — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Ganjil 2025/2026
 
-## Deskripsi Tugas
+## Tujuan Pembelajaran
+Mahasiswa mempelajari cara melakukan query sederhana (untuk mendapatkan informasi) dari satu tabel dengan menggunakan
+berbagai klausa dan fungsi dasar SQL. Dalam prosesnya, mahasiswa tidak hanya memahami cara menampilkan data, tetapi juga
+mempelajari bagaimana memfilter, mengurutkan, membatasi, dan memodifikasi hasil query agar sesuai dengan kebutuhan
+analisis data.
 
-Mengerjakan Soal `Ujian Praktikum` tahun lalu dengan ketentuan berikut:
+## Agenda
+- Evaluasi Hasil Latihan Lab 1
+- Basic Queries
 
-1. Kerjakan soal nomor 2.
-2. Pastikan ketepatan setiap querynya.
-
-:::warning
-Dilarang keras penggunaan ChatGPT atau AI apapun itu 🙄
-:::
-
-## Pengumpulan
-
-Tugas dikumpulkan dalam 1 file source code dalam bentuk **SQL** dengan ketentuan nama berkas `NIM-NAMA_Lab2.sql`.
-
-[Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1lbGvs-hvIo2Tkqpz4lCr1WXN3sci7XEP/view?usp=sharing)
-
-Pengumpulan tugas pada `Google Classroom` masing" kelas.
+## Evaluasi Hasil Latihan Lab 1
 
 ## Kontributor
 
