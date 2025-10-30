@@ -1,4 +1,4 @@
-<!-- ---
+---
 id: pertemuan-6
 title: Lab 2 Basic Queries
 sidebar_label: Pertemuan 6
@@ -39,4 +39,4 @@ Pengumpulan tugas pada `Google Classroom` masing" kelas.
 ## Credits
 
 Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data dapat menyelesaikan tutorial saat sesi lab berlangsung.
-::: -->
+:::
