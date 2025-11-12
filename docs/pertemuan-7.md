@@ -2,7 +2,7 @@
 id: pertemuan-7
 title: Lab 3 Performing Advanced Queries
 sidebar_label: Pertemuan 7
-sidebar_position: 7
+sidebar_position: 8
 slug: /pertemuan-7
 ---
 
@@ -23,7 +23,9 @@ Dilarang keras penggunaan ChatGPT atau AI apapun itu 🙄
 
 ## Pengumpulan
 
-Tugas dikumpulkan dalam 1 file source code dalam bentuk **SQL** dengan ketentuan nama berkas `NIM-NAMA_Lab3.sql`.
+Tugas dikumpulkan dalam 1 file source code dalam bentuk **SQL** 
+
+dengan ketentuan nama berkas 👉🏻 `NIM-NAMA_Lab3.sql`
 
 [Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1hLhXXS9yx1t_K0aYOZ5DVBV-4Wqww8vT/view?usp=sharing)
 
