@@ -18,5 +18,5 @@ Path: assignments/index
 :::
 
 :::warning
-- Saat mengerjakan tugas individu maupun kelompok dilarang keras menggunakan AI apapun itu 😇
+- Keterlambatan pengumpulan tugas jadi konsekuensi masing" yaa 😇
 :::
