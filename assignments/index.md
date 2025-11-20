@@ -5,11 +5,6 @@ Path: assignments/index
 ---
 
 # Informasi Tugas Individu & Kelompok
-:::note
-1. Tugas individu rilis setiap minggu setelah kelas selesai.
-
-2. Tenggat waktu pengerjaan tugas individu adalah 1 minggu setelah kelas praktikum selesai.
-:::
 
 :::tip
 1. Perhatikan rubrik penilaian yang tersedia di setiap tugas untuk mendapatkan nilai sempurna.
