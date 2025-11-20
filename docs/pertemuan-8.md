@@ -11,12 +11,12 @@ slug: /pertemuan-8
 > **DBMS** — diselenggarakan oleh Fakultas Teknologi Informasi dan Sains Data Universitas Sebelas Maret, Semester Ganjil 2025/2026
 
 ## Agenda
-- Evaluasi lab 2 & 3
+<!-- - Evaluasi lab 2 & 3 -->
 - Database Administration
 
-## Evaluasi lab 2 & 3 
+<!-- ## Evaluasi lab 2 & 3 
 
-[Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1hLhXXS9yx1t_K0aYOZ5DVBV-4Wqww8vT/view?usp=sharing)
+[Soal Ujian Praktikum Tahun Lalu 😴](https://drive.google.com/file/d/1hLhXXS9yx1t_K0aYOZ5DVBV-4Wqww8vT/view?usp=sharing) -->
 
 ## Database Administration
 
