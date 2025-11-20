@@ -24,6 +24,15 @@ Ide Tema ERD :
 4. Tema 4 – Sistem Klinik / Poliklinik Sederhana
 5. Tema 5 – Sistem Manajemen Kursus / Bimbel
 
+:::warning
+## Form 
+
+Setiap orang wajib mengisi form penilaiannya ya 🙏🏻
+
+**[Form Penilaian Anggota](https://forms.gle/HkxnYKpMfQ4NG5mB7)**
+:::
+
+
 ## Isi Laporan
 
 ### BAB I – PENDAHULUAN
@@ -192,5 +201,5 @@ Pengumpulan tugas pada `Google Classroom` masing" kelas.
 :::info
 ## Credits
 
-Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data dapat menyelesaikan tutorial saat sesi lab berlangsung.
+Tutorial ini dikembangkan oleh Asisten Praktikum DBMS 2025. Segala tutorial serta instruksi yang dicantumkan pada repositori ini dirancang sedemikian rupa sehingga mahasiswa yang sedang mengambil mata kuliah Basis Data.
 :::
